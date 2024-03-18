@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.e">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Meeting Notes</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <p id="hasil">tes</p>
-
-    <button onclick="show()">Submit</button>
-    <script>
-        tanggal = new Date();
-        document.getElementById("hasil").innerHTML = tanggal
-    </script>
-
-    <script src="main.js"></script>
+<div class="container">
+  <div class="header">
+    <h1>Let's Talk Business!</h1>
+  </div>
+  <div class="content">
+    <img src="meeting.jpg" alt="Business Meeting" class="meeting-image">
+    <p class="txt-waktu" id="hasil"></p>
+    <div class="agenda">
+      <h2>Agenda:</h2>
+      <ul>
+        <li>Complete Documentation</li>
+        <li>Team Updates</li>
+        <li>Pre-launch Checklist</li>
+      </ul>
+    </div>
+    <button onclick="show()">Start Meeting</button>
+  </div>
+</div>
+<script>
+  // JavaScript code to display the current date and time
+  let tanggal = new Date();
+  document.getElementById("hasil").innerHTML = tanggal;
+</script>
+<script src="main.js"></script>
 </body>
+</html>
+
